@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+
+{% block navbar %}
+<!-- Creating the Navbar -->
+<nav class="w-full h-24 flex  justify-center items-center absolute top-0 md:static  md:w-3/5 md:mx-auto md:mb-6">
+
+    <!-- Logo and Company Title -->
+    <div class="flex-1 col-span ">
+        <a class="flex   md:items-center " href="{{config.base_url}}">
+
+            <!-- logo image -->
+            <img class="embetter-logo-img md:px-4 md:w-24 w-8 ml-3 mr-2 md:ml-1 md:mr-1" src="./img/logo.png" alt="">
+
+            <!-- Embetter Title -->
+            <span class="embetter-title  font-normal md:text-3xl text-2xl"
+                style="color: #0192C8;">{{config.title}}</span>
+        </a>
+    </div>
+    <!-- logo and title ends -->
+
+    <!-- Navigation Links -->
+    <ul class="md:flex md:justify-center md:items-center md:text-2xl font-normal hidden ">
+
+        {% for item in config.extra.clean_blog_menu %}
+        <li class="nav-item px-4 hover:text-4xl">
+            <a class="nav-link active" href="{{ item.url | replace(from = " $BASE_URL", to=config.base_url)
+                }}">{{item.name}}</a>
+        </li>
+
+        {% endfor %}
+    </ul>
+
+    <!-- Hamburger icon for mobile screens -->
+    <div class="md:hidden md:flex-initial  px-10 ">
+        <a class="text-3xl relative left-2/3" href="/html/nav.html">&#9868;</a>
+    </div>
+    <!-- Hamburger icon ends -->
+
+    <!-- navigation links end -->
+
+</nav>
+<!-- navbar ends here -->
+{% endblock %}

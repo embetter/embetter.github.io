@@ -1,0 +1,25 @@
+# The URL the site will be built for
+base_url = "https://embetter.in"
+generate_rss = true
+compile_sass = true
+
+title = "Embetter Tech"
+description = "We create Dynamic Products which ships from Zero to 100"
+highlight_code = true
+
+taxonomies = [
+    {name = "categories", rss = true, paginate_by=5},
+    {name = "tags", rss = true, paginate_by=5},
+]
+
+[extra]
+author = "Embetter"
+clean_blog_menu = [
+   
+    {url = "$BASE_URL/about", name = "About Us"},
+    {url = "$BASE_URL/contact", name = "Services"}
+]
+clean_blog_social = [
+    {url = "https://twitter.com", icon="fab fa-twitter"},
+    {url = "$BASE_URL/rss.xml", icon="fas fa-rss"}
+]
