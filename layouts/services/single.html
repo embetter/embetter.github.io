@@ -34,8 +34,8 @@ class="flex  justify-center items-center container rounded-2xl w-11/12 h-3/6  md
 </div>
 <div class="flex justify-center items-start w-full  h-20">
     <span class="flex p-4"> 
-        <a class="pr-4" href="{{.Params.PrevLink | relURL}}"><img src="/img/arrow-left.png" width="54px"  alt=""></a>
-        <a href="{{.Params.NextLink | relURL}}"><img src="/img/arrow-right.png" width="54px" alt=""></a>
+        <a class="pr-4" href="{{.Params.PrevLink | absURL}}"><img src="/img/arrow-left.png" width="54px"  alt=""></a>
+        <a href="{{.Params.NextLink | absURL}}"><img src="/img/arrow-right.png" width="54px" alt=""></a>
     </span>
 </div>
 
