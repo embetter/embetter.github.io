@@ -7,7 +7,7 @@ If you'd like to run the website locally for development or testing, follow thes
 
 ### Prerequisites
 
-Make sure you have [Zola Static Site Generator (SSG)](https://getzola.org/) installed on your system.
+Make sure you have [Hugo](https://gohugo.io/) installed on your system.
 
 ### Clone the Repository
 
@@ -23,14 +23,14 @@ cd embetter.github.io
 
 ### Start the Local Server
 
-Now, you can use Zola to serve the website locally. Run the following command:
+Now, you can use Hugo to serve the website locally. Run the following command:
 
 ```bash
-zola serve
+hugo server
 ```
 
 ### Access the Local Website
 
 Once the server is up and running, open your favorite web browser and navigate to:
 
-[http://127.0.0.1:1111](http://127.0.0.1:1111)
+[http://localhost:1313/](http://localhost:1313/)

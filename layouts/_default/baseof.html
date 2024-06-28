@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/main.js"></script>
+    
+    
+</head>
+
+<body class="w-full h-full">
+
+    <div class="w-full h-full flex flex-col items-center justify-center">
+
+        <div class="w-full h-full flex flex-col items-center justify-center ">
+
+            {{ partial "navbar" .}}
+
+            {{block "main" . }}
+            {{end}}
+
+            {{ partial "footer" .}}
+
+        </div>
+    </div>
+</body>
+
+</html>

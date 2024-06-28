@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embetter Tech</title>
+    <link>https://embetter.in/</link>
+    <description>Recent content on Embetter Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Jun 2024 01:50:37 +0530</lastBuildDate>
+    <atom:link href="https://embetter.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DataOps</title>
+      <link>https://embetter.in/services/dataops/</link>
+      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+      <guid>https://embetter.in/services/dataops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design (UI/UX Design)</title>
+      <link>https://embetter.in/services/design/</link>
+      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+      <guid>https://embetter.in/services/design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development (web/ App Development)</title>
+      <link>https://embetter.in/services/development/</link>
+      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+      <guid>https://embetter.in/services/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>https://embetter.in/services/devops/</link>
+      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+      <guid>https://embetter.in/services/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Embedded Systems (Firmware Development)</title>
+      <link>https://embetter.in/services/embedded-systems/</link>
+      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+      <guid>https://embetter.in/services/embedded-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOT (Bluetooth/ LoRaWAN Integration)</title>
+      <link>https://embetter.in/services/iot/</link>
+      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+      <guid>https://embetter.in/services/iot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>https://embetter.in/first-post/</link>
+      <pubDate>Thu, 27 Jun 2024 03:46:15 +0530</pubDate>
+      <guid>https://embetter.in/first-post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
