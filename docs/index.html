@@ -9,7 +9,7 @@
     <title>Embetter</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <script src="/js/main.js"></script>
     
     
@@ -17,7 +17,7 @@
 
 <body class="w-full h-full">
 
-    <div class="w-full h-full flex flex-col items-center justify-center">
+    <div id="container_div" class="w-full h-full flex flex-col items-center justify-center">
 
         <div class="w-full h-full flex flex-col items-center justify-center ">
 
@@ -57,9 +57,29 @@
 
  
  <div class="md:hidden md:flex-initial  px-10 ">
-     <a class="text-3xl relative left-2/3" href="/html/nav.html">&#9868;</a>
+     <span id="hamburger-icon" class="text-3xl relative left-2/3 ">&#9868;</span>
  </div>
  
+ 
+ <span id="nav-hidden" class="hidden">
+<div class=" md:hidden md:flex-initial  px-10 ">
+    <span id="cross" class="text-3xl relative left-2/3 ">&#10006;</span>
+</div>
+ <ul class="md:hidden w-11/12 absolute left-5 top-36 text-2xl">
+
+    
+        <a class="flex  justify-between p-2" href="/services/iot">
+            <li class=" ">Services</li>
+            <li class="">&#10095;</li>
+        </a>
+        <a class="flex  justify-between p-2 mt-2" href="mailto: support@embetter.in">
+            <li class=" ">Contact Us</li>
+            <li class="">&#10095;</li>
+        </a>
+   
+
+ </ul>
+</span>
 
  
 
@@ -70,40 +90,68 @@
 
             
 
-    <div
-    class="flex flex-col justify-center items-center container rounded-2xl w-11/12 h-3/6  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-3/5 md:h-3/4 md:rounded-3xl">
+<div id="main_content"
+    class="flex flex-col justify-center items-center container rounded-2xl w-11/12 h-3/6  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-sm md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-3/5 md:h-3/4 md:rounded-3xl">
 
     
     <div class="w-full h-full flex flex-col items-center justify-center ">
 
         
-        <div class="description-text   text-center text-base md:text-4xl font-medium ">
+        <div class="description-text  text-black text-center text-base md:text-4xl font-medium ">
             <p class="p-2">Your <span class=" text-xl md:text-4xl font-normal ">Tech Partner</span>
             </p>
             <p class="p-2">for a <span class=" text-xl md:text-4xl font-normal text-[#0192C8]"> Better Tomorrow.</span></p>
+
         </div>
 
         
         <div class="contact-btn text-center  mt-2 ">
-            <a href="mailto: support@embetter.in">
+            <button
+                class="md:p-3 p-2 bg-[#0192C8] text-sm md:text-xl text-white rounded-lg md:rounded-2xl hover:bg-red-700 md:hover:text-2xl ">Contact
+                Us</button>
+        </div>
+
+    </div>
+    
+
+    
+    <div class="flex justify-center items-end mx-auto  w-full h-full md:w-5/6 md:h-2/3">
+        <div class="map-img pb-4 w-11/12 h-4/6  text-center   md:flex md:justify-center md:w-full md:h-4/5">
+            <img class="w-full  md:h-5/6" src="./img/map-image.png" alt="">
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+<div id="main-hidden" class="hidden h-4/6  absolute bottom-2">
+    
+    <div class="contact-btn text-center  mt-10 ">
+        <a href="mailto: support@embetter.in">
             <button
                 class="md:p-2 p-2 bg-[#0192C8] text-sm md:text-xl text-white rounded-lg md:rounded-2xl hover:bg-white hover:border-2 hover:border-[#0192C8] hover:text-[#0192C8]  ">Contact
                 Us</button>
-            </a>
-        </div>
-
+        </a>
     </div>
     
 
     
-    <div class="flex justify-center items-end mx-auto  w-full h-full md:w-5/6 md:h-2/3 p-3">
+    <div class="flex items-end w-full h-full pb-16">
         <div class="map-img pb-4 w-full   text-center  md:flex md:justify-center md:w-full md:h-full  ">
-            <img class="w-full  md:h-full" src="./img/map-image.png" alt="">
+            <img class="w-full  md:h-full" src="/img/globe.svg" alt="">
         </div>
     </div>
     
-
 </div>
+
+
+
 
 
 
