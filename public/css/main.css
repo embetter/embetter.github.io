@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: dotFont;
+    src: url(dotFont.ttf);
+}
+@font-face {
+    font-family: alkia;
+    src: url(alkia.ttf);
+}
+@font-face {
+    font-family: atyp;
+    src: url(atyp.otf);
+}
+@font-face {
+    font-family: FreeMono;
+    src: url(FreeMono.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/main-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: atyp, sans-serif;
+}
+
+
+
+.description-text span{
+    font-family: dotFont;
+}
+
+.embetter-title{
+    font-family: FreeMono;
+}
+
+.contact-btn button{
+    font-family: alkia;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-image: url('/img/background-phone.png'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 3em;
+       
+    }   
+}
