@@ -37,9 +37,29 @@
 
  <!-- Hamburger icon for mobile screens -->
  <div class="md:hidden md:flex-initial  px-10 ">
-     <a class="text-3xl relative left-2/3" href="/html/nav.html">&#9868;</a>
+     <span id="hamburger-icon" class="text-3xl relative left-2/3 ">&#9868;</span>
  </div>
+ 
  <!-- Hamburger icon ends -->
+ <span id="nav-hidden" class="hidden">
+<div class=" md:hidden md:flex-initial  px-10 ">
+    <span id="cross" class="text-3xl relative left-2/3 ">&#10006;</span>
+</div>
+ <ul class="md:hidden w-11/12 absolute left-5 top-36 text-2xl">
+
+    
+        <a class="flex  justify-between p-2" href="{{"/services/iot" | relURL}}">
+            <li class=" ">Services</li>
+            <li class="">&#10095;</li>
+        </a>
+        <a class="flex  justify-between p-2 mt-2" href="mailto: support@embetter.in">
+            <li class=" ">Contact Us</li>
+            <li class="">&#10095;</li>
+        </a>
+   
+
+ </ul>
+</span>
 
  <!-- navigation links end -->
 
