@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Embetter Tech</title>
-    <link>https://embetter.in/embetter.github.io/services/</link>
+    <link>http://localhost:1313/services/</link>
     <description>Recent content in Services on Embetter Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Jun 2024 01:50:37 +0530</lastBuildDate>
-    <atom:link href="https://embetter.in/embetter.github.io/services/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DataOps</title>
-      <link>https://embetter.in/embetter.github.io/services/dataops/</link>
+      <link>http://localhost:1313/services/dataops/</link>
       <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>https://embetter.in/embetter.github.io/services/dataops/</guid>
+      <guid>http://localhost:1313/services/dataops/</guid>
       <description></description>
     </item>
     <item>
       <title>Design (UI/UX Design)</title>
-      <link>https://embetter.in/embetter.github.io/services/design/</link>
+      <link>http://localhost:1313/services/design/</link>
       <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>https://embetter.in/embetter.github.io/services/design/</guid>
+      <guid>http://localhost:1313/services/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Development (web/ App Development)</title>
-      <link>https://embetter.in/embetter.github.io/services/development/</link>
+      <link>http://localhost:1313/services/development/</link>
       <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>https://embetter.in/embetter.github.io/services/development/</guid>
+      <guid>http://localhost:1313/services/development/</guid>
       <description></description>
     </item>
     <item>
       <title>DevOps</title>
-      <link>https://embetter.in/embetter.github.io/services/devops/</link>
+      <link>http://localhost:1313/services/devops/</link>
       <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>https://embetter.in/embetter.github.io/services/devops/</guid>
+      <guid>http://localhost:1313/services/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Embedded Systems (Firmware Development)</title>
-      <link>https://embetter.in/embetter.github.io/services/embedded-systems/</link>
+      <link>http://localhost:1313/services/embedded-systems/</link>
       <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>https://embetter.in/embetter.github.io/services/embedded-systems/</guid>
+      <guid>http://localhost:1313/services/embedded-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>IOT (Bluetooth/ LoRaWAN Integration)</title>
-      <link>https://embetter.in/embetter.github.io/services/iot/</link>
+      <link>http://localhost:1313/services/iot/</link>
       <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>https://embetter.in/embetter.github.io/services/iot/</guid>
+      <guid>http://localhost:1313/services/iot/</guid>
       <description></description>
     </item>
   </channel>
