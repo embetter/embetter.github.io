@@ -1,23 +1,61 @@
+
+{{define "nav_icons"}}
+{{/*  <div id="service_menu" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-6">  */}}
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/development" | relURL}}"><img src="{{.Params.IconDevelopment | relURL}}" alt=""></a></span>
+        
+    </div>
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/design" | relURL}}"><img src="{{.Params.IconDesign | relURL}}" alt=""></a></span>
+        
+    </div>
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/dataops" | relURL}}"><img src="{{.Params.IconDataOps | relURL}}" alt=""></a></span>
+       
+    </div>
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/embedded-systems" | relURL}}"><img src="{{.Params.IconEmbedded | relURL}}" alt=""></a></span>
+        
+    </div>
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/iot" | relURL}}"><img src="{{.Params.IconIot | relURL}}" alt=""></a></span>
+        
+    </div>
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/web3" | relURL}}"><img src="{{.Params.IconWeb3 | relURL}}" alt=""></a></span>
+        
+    </div>
+    <div class="flex flex-col items-center justify-center md:px-2">
+        <span><a href="{{"/services/devops" | relURL}}"><img src="{{.Params.IconDevOps | relURL}}" alt=""></a></span>
+        
+    </div>
+{{/*  </div>  */}}
+
+
+{{end}}
+
 {{define "main"}}
+{{/* Div box starts here */}}
+{{/*  <div id="service_content"
+    class="  flex flex-col-reverse md:flex md:flex-row  md:justify-center items-center container rounded-2xl w-11/12 h-auto  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-4/5 xl:w-3/5 md:h-4/6 md:rounded-3xl mt-16 md:mt-0  ">  */}}
+    <div class="flex flex-col-reverse md:flex md:flex-row justify-center items-center md:p-4">
 
-<div class=" hidden w-3/5 md:flex justify-start">
-    <p class="md:text-3xl  md:p-4  font-[alkia] ">Services</p>
-</div>
-
-{{/*  Div box starts here  */}}
-<div id="single-main-content"
-    class="  flex flex-col-reverse md:flex md:flex-row  md:justify-center items-center container rounded-2xl w-11/12 h-4/6  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-3/5 md:h-3/4 md:rounded-3xl mt-16 md:mt-0">
+    {{/* left navigation button */}}
+    <div class="md:block hidden w-32 relative -left-16  ">
+        <a class=" " href="{{.Params.PrevLink | relURL}}"><img src="/img/left-arrow.svg"
+            width="54px" alt=""></a>
+    </div>
 
     <!-- text and button here -->
     <div class="w-full h-full flex flex-col items-center justify-center p-2">
 
-        <!-- title here -->
+        <!-- title here --> 
         <div class="description-text  text-center text-sm md:text-3xl font-semibold ">
             <p>{{.Title}}</p>
         </div>
 
         <!-- Description here -->
-        <div class="contact-btn text-center text-xs md:text-base mt-5 ">
+        <div class="contact-btn text-center text-xs md:text-sm mt-5 ">
             <p>{{.Params.Description}}</p>
             <br>
             <p>{{.Params.lastLine}}</p>
@@ -27,23 +65,48 @@
     <!-- title and description ends -->
 
     <!-- Display image here -->
-    <div class="flex justify-center items-end mx-auto  w-full h-full md:w-full  p-3">
-        <div class="map-img pb-4 w-4/6   text-center  md:flex md:justify-center md:w-full md:h-full  ">
-            <img src="{{.Params.ImageBig}}" alt="">
+    <div class="flex justify-center items-end mx-auto  w-full h-full md:w-full  ">
+        <div class=" pb-4 w-4/6   text-center  md:flex md:justify-center md:w-full md:h-full  ">
+            <img class="md:w-9/12" src="{{.Params.ImageBig}}" alt="">
         </div>
+    </div>
+
+    {{/*  right navigation button  */}}
+    <div class="md:block hidden w-32 relative -right-16">
+        <a class="" href="{{.Params.NextLink | relURL}}"><img src="/img/right-arrow.svg"
+            width="54px" alt=""></a>
     </div>
 
 </div>
 
-{{/*  Div box ends here  */}}
+{{/* Div box ends here */}}
 
-{{/*  Navigation Buttons  */}}
-<div class="flex justify-center items-start w-full  h-20">
+{{/* Navigation Buttons */}}
+
+
+{{/* Small Devices navigation */}}
+<div id="service_navigation" class="flex justify-center items-start w-full  h-20 md:hidden">
     <span class="flex p-4">
-        <a class="pr-4" href="{{.Params.PrevLink | relURL}}"><img src="/img/arrow-left.png" width="54px" alt=""></a>
-        <a href="{{.Params.NextLink | relURL}}"><img src="/img/arrow-right.png" width="54px" alt=""></a>
+        <a class="pr-4" href="{{.Params.PrevLink | relURL}}"><img src="/img/left-arrow.svg" width="54px" alt=""></a>
+        <a href="{{.Params.NextLink | relURL}}"><img src="/img/right-arrow.svg" width="54px" alt=""></a>
     </span>
 </div>
+{{/* Small Devices navigation ends*/}}
+
+
+{{/* medium and large devices services navigation */}}
+{{/*  
+<div class="md:flex justify-center items-start w-full  h-20 hidden  ">
+    <span class="flex p-4">
+        <a class=" absolute top-2/4 left-[280px]" href="{{.Params.PrevLink | relURL}}"><img src="/img/left-arrow.svg"
+                width="54px" alt=""></a>
+        <a class="absolute top-2/4 right-[280px]" href="{{.Params.NextLink | relURL}}"><img src="/img/right-arrow.svg"
+                width="54px" alt=""></a>
+    </span>
+</div>  */}}
+
+<script src="/js/main.js" defer></script>
+{{/* medium and large devices services navigation ends */}}
 
 
 {{end}}

@@ -9,4 +9,12 @@ prevLink = "/services/embedded-systems"
 image =  ""
 imageBig = "/img/webdev.svg"
 
+iconIot = '/img/iot-disable.svg'
+iconDataOps = '/img/dataops-disable.svg'
+iconDevOps = '/img/devops-disable.svg'
+iconWeb3 = '/img/web3-disable.svg'
+iconDesign = '/img/design-disable.svg'
+iconDevelopment = '/img/development-enable.svg'
+iconEmbedded = '/img/embedded-disable.svg'
+
 +++

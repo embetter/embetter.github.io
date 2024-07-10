@@ -1,65 +1,62 @@
  <!-- Creating the Navbar -->
  <nav
- class="w-full h-24 flex  justify-center items-center absolute top-0 md:static  md:w-3/5 md:mx-auto md:mb-6">
+ class="w-full h-24 flex  justify-between items-center absolute top-0 md:pt-20 xl:pt-0 xl:static md:px-8  md:w-4/5 xl:w-3/5 md:mx-auto md:mt-2 md:mb-2 z-30 ">
 
  <!-- Logo and Company Title -->
- <div class="flex-1 col-span ">
-     <a class="flex   md:items-center md:h-14 " href="{{"/" | absURL}}">
+ <div class="flex flex-col ">
+     <a class="flex   md:items-center md:h-14  w-fit" href="{{"/" | absURL}}">
 
          <!-- logo image -->
-         <img class="embetter-logo-img  md:w-14 md:h-14 w-8 ml-3 mr-2 md:ml-0 md:mr-0 "
+         <img class="embetter-logo-img  md:w-12 md:h-12 w-8 ml-3 mr-2 md:ml-0 md:mr-0 "
              src="/img/logo.svg" alt="">
 
          <!-- Embetter Title -->
-         <span class="embetter-title font-normal md:text-3xl text-2xl md:ml-2"
+         <span class="embetter-title font-normal md:text-3xl text-2xl md:ml-2 "
              style="color: #0192C8;">EMBETTER</span>
      </a>
  </div>
  <!-- logo and title ends -->
 
  <!-- Navigation Links -->
+ <div>
   <ul class="md:flex md:justify-center md:items-center md:text-xl font-normal hidden ">
-
-     
-     {{/*  <li class="nav-item px-4 hover:text-2xl">
-         <a class="nav-link active" href="/about">About Us</a>
-     </li>
-       */}}
      <li class="nav-item px-4 hover:text-2xl">
-         <a class="nav-link active" href="{{"/services/iot" | relURL}}" >Services</a>
+         <a id="services" class="nav-link active " href="{{"/services/development" | relURL}}" >Services</a>
      </li>
+    
      <li class="nav-item px-4 hover:text-2xl">
-         <a class="nav-link active" href="mailto: support@embetter.in">Contact Us</a>
+         <a class="nav-link active" href="{{"/about/about" | relURL}}">About Us</a>
      </li>
-
-     
  </ul>  
+</div>
+
+
 
  <!-- Hamburger icon for mobile screens -->
+
+ <div class="md:hidden">
+
  <div class="md:hidden md:flex-initial  px-10 ">
-     <span id="hamburger-icon" class="text-3xl relative left-2/3 ">&#9868;</span>
- </div>
- 
- <!-- Hamburger icon ends -->
- <span id="nav-hidden" class="hidden">
-<div class=" md:hidden md:flex-initial  px-10 ">
-    <span id="cross" class="text-3xl relative left-2/3 ">&#10006;</span>
+    <span id="hamburger-icon" class="text-3xl relative left-2/3 top-3 m-2">&#9868;</span>
 </div>
- <ul class="md:hidden w-11/12 absolute left-5 top-36 text-2xl">
 
-    
-        <a class="flex  justify-between p-2" href="{{"/services/iot" | relURL}}">
-            <li class=" ">Services</li>
-            <li class="">&#10095;</li>
-        </a>
-        <a class="flex  justify-between p-2 mt-2" href="mailto: support@embetter.in">
-            <li class=" ">Contact Us</li>
-            <li class="">&#10095;</li>
-        </a>
-   
-
- </ul>
-</span>
+<!-- Hamburger icon ends -->
+<span id="nav-hidden" class="hidden">
+<div class=" md:hidden md:flex-initial  px-10 ">
+   <span id="cross" class="text-3xl relative left-2/3 top-3 m-2">&#10539;</span>
+</div>
+<ul class="md:hidden w-11/12 absolute left-5 top-36 text-2xl mb-10">
+       <a class="flex  justify-between p-2" href="{{"/services/development" | relURL}}">
+           <li class=" ">Services</li>
+           <li class="">&#10095;</li>
+       </a>
+       <a class="flex  justify-between p-2 mt-2" href="{{"/about/about" | relURL}}">
+           <li class=" ">About Us</li>
+           <li class="">&#10095;</li>
+       </a>
+</ul>
+</span>`
+</div>
 
  <!-- navigation links end -->
 

@@ -9,4 +9,12 @@ prevLink = "/services/iot"
 image =  ""
 imageBig = "/img/embedded.svg"
 
+iconIot = '/img/iot-disable.svg'
+iconDataOps = '/img/dataops-disable.svg'
+iconDevOps = '/img/devops-disable.svg'
+iconWeb3 = '/img/web3-disable.svg'
+iconDesign = '/img/design-disable.svg'
+iconDevelopment = '/img/development-disable.svg'
+iconEmbedded = '/img/embedded-enable.svg'
+
 +++

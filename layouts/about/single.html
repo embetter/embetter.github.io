@@ -1,0 +1,52 @@
+{{define "main"}}
+
+{{/* Div box starts here */}}
+{{/* <div id="service_content"
+    class="  flex flex-col justify-center my-8 md:my-0 md:flex md:flex-col p-2 md:justify-center items-center container rounded-2xl w-11/12 h-auto  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-4/5 xl:w-3/5 md:h-auto md:rounded-3xl mt-16 md:mt-0 font-[Alkia] ">
+    */}}
+
+
+    {{/* About us here */}}
+    <div id="aboutUs" class="w-full p-2">
+        <p class="text-base md:text-2xl md:font-medium md:pb-1">{{.Params.Title}}</p>
+        <p class="text-xs md:text-sm md:font-normal">{{.Params.AboutDescription}}</p>
+    </div>
+    {{/* About us ends here */}}
+
+    {{/* Our Story and Vision here */}}
+    <div id="about-center-text" class="md:flex md:flex-col  justify-between text-start  ">
+        <div class=" md:px-2 p-1">
+            <p class="text-sm md:text-xl font-medium md:pb-1">{{.Params.StoryTitle}}</p>
+            <p class="text-xs md:text-sm md:font-normal">{{.Params.StoryDescription}}</p>
+        </div>
+        <div class="justify-start  md:px-2 p-1">
+            <p class="text-sm md:text-xl font-medium md:pb-1">{{.Params.VisionTitle}}</p>
+            <p class="text-xs md:text-sm md:font-normal">{{.Params.VisionDescription}}</p>
+        </div>
+    </div>
+    {{/* Our Story and Vision ends here */}}
+
+
+    {{/* Why Choose Us starts here */}}
+    <div id="team-corner" class="w-full p-1 ">
+        <div>
+            <p class="text-sm md:text-lg font-medium md:pb-1">{{.Params.ChooseUsTitle}}</p>
+            <div class="text-xs md:text-sm">
+                <li>Innovation: Leading with the latest technologies.</li>
+                <li>Customization: Solutions tailored to your need</li>
+                <li>Expertise: Seasoned professionals across tech domains</li>
+            </div>
+
+            <p class="text-xs md:text-sm pt-2">{{.Params.JoinUsText}}</p>
+
+
+        </div>
+    </div>
+    {{/*
+</div> */}}
+{{/* Team corner ends here */}}
+
+
+{{/* Div box ends here */}}
+
+{{end}}
