@@ -26,18 +26,14 @@ html, body {
     height: 100%;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    
 }
 
-
 body{
-    margin: 0;
-    padding: 0;
     background-image: url(/img/main-background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: atyp, sans-serif;
 }
-
 
 
 .description-text span{

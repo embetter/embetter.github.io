@@ -7,11 +7,11 @@
     <link rel="icon" href="/img/logo.svg" type="image/icon type">
     <title>Embetter</title>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/output.css">
+
     
     <script src="/js/main.js"></script>
-    
-    
+    <link rel="stylesheet" href="/css/output.css">
+
 </head>
 
 <body class="w-full h-full">
@@ -20,65 +20,66 @@
 
         <div class="w-full h-full flex flex-col items-center justify-center ">
 
+            
              
  <nav
- class="w-full h-24 flex  justify-center items-center absolute top-0 md:static  md:w-3/5 md:mx-auto md:mb-6">
+ class="w-full h-24 flex  justify-between items-center absolute top-0 md:pt-20 xl:pt-0 xl:static md:px-8  md:w-4/5 xl:w-3/5 md:mx-auto md:mt-2 md:mb-2 z-30 ">
 
  
- <div class="flex-1 col-span ">
-     <a class="flex   md:items-center md:h-14 " href="https://embetter.in/">
+ <div class="flex flex-col ">
+     <a class="flex   md:items-center md:h-14  w-fit" href="https://embetter.in/">
 
          
-         <img class="embetter-logo-img  md:w-14 md:h-14 w-8 ml-3 mr-2 md:ml-0 md:mr-0 "
+         <img class="embetter-logo-img  md:w-12 md:h-12 w-8 ml-3 mr-2 md:ml-0 md:mr-0 "
              src="/img/logo.svg" alt="">
 
          
-         <span class="embetter-title font-normal md:text-3xl text-2xl md:ml-2"
+         <span class="embetter-title font-normal md:text-3xl text-2xl md:ml-2 "
              style="color: #0192C8;">EMBETTER</span>
      </a>
  </div>
  
 
  
+ <div>
   <ul class="md:flex md:justify-center md:items-center md:text-xl font-normal hidden ">
-
-     
-     
      <li class="nav-item px-4 hover:text-2xl">
-         <a class="nav-link active" href="/services/iot" >Services</a>
+         <a id="services" class="nav-link active " href="/services/development" >Services</a>
      </li>
-     <li class="nav-item px-4 hover:text-2xl">
-         <a class="nav-link active" href="mailto: support@embetter.in">Contact Us</a>
-     </li>
-
-     
- </ul>  
-
- 
- <div class="md:hidden md:flex-initial  px-10 ">
-     <span id="hamburger-icon" class="text-3xl relative left-2/3 ">&#9868;</span>
- </div>
- 
- 
- <span id="nav-hidden" class="hidden">
-<div class=" md:hidden md:flex-initial  px-10 ">
-    <span id="cross" class="text-3xl relative left-2/3 ">&#10006;</span>
-</div>
- <ul class="md:hidden w-11/12 absolute left-5 top-36 text-2xl">
-
     
-        <a class="flex  justify-between p-2" href="/services/iot">
-            <li class=" ">Services</li>
-            <li class="">&#10095;</li>
-        </a>
-        <a class="flex  justify-between p-2 mt-2" href="mailto: support@embetter.in">
-            <li class=" ">Contact Us</li>
-            <li class="">&#10095;</li>
-        </a>
-   
+     <li class="nav-item px-4 hover:text-2xl">
+         <a class="nav-link active" href="/about/about">About Us</a>
+     </li>
+ </ul>  
+</div>
 
- </ul>
-</span>
+
+
+ 
+
+ <div class="md:hidden">
+
+ <div class="md:hidden md:flex-initial  px-10 ">
+    <span id="hamburger-icon" class="text-3xl relative left-2/3 top-3 m-2">&#9868;</span>
+</div>
+
+
+<span id="nav-hidden" class="hidden">
+<div class=" md:hidden md:flex-initial  px-10 ">
+   <span id="cross" class="text-3xl relative left-2/3 top-3 m-2">&#10539;</span>
+</div>
+<ul class="md:hidden w-11/12 absolute left-5 top-36 text-2xl mb-10">
+       <a class="flex  justify-between p-2" href="/services/development">
+           <li class=" ">Services</li>
+           <li class="">&#10095;</li>
+       </a>
+       <a class="flex  justify-between p-2 mt-2" href="/about/about">
+           <li class=" ">About Us</li>
+           <li class="">&#10095;</li>
+       </a>
+</ul>
+</span>`
+</div>
 
  
 
@@ -88,41 +89,110 @@
 
 
             
+            <div id="nav-icon" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-2">
+                
+                
+            </div>
 
-    <div
-    class="flex flex-col justify-center items-center container rounded-2xl w-11/12 h-3/6  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-3/5 md:h-3/4 md:rounded-3xl">
+            
+            <div id="page-content" class="flex flex-col justify-center my-8 md:my-0 md:flex md:flex-col p-2 md:justify-center items-center container rounded-2xl w-11/12 h-auto  md:p-6  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:shadow-2xl md:border-[0.9px] md:w-4/5 xl:w-3/5  md:rounded-3xl mt-16 md:mt-0 font-[Alkia]">
+                
+
+
 
     
-    <div class="w-full h-full flex flex-col items-center justify-center ">
+    <div class="w-full h-full flex flex-col items-center justify-center p-2 ">
 
         
-        <div class="description-text   text-center text-base md:text-4xl font-medium ">
-            
+        <div class="description-text  text-black text-center text-base md:text-3xl font-medium ">
+            <p class="p-2">Your <span class=" text-xl md:text-3xl font-normal ">Tech Partner</span>
+            </p>
+            <p class="p-2">for a <span class=" text-xl md:text-3xl font-normal text-[#0192C8]"> Better Tomorrow.</span></p>
+
         </div>
 
         
-        <div class="contact-btn text-center  mt-2 ">
+        <div class="contact-btn text-center p-2 mt-2 ">
+            <a href="mailto: support@embetter.in">
             <button
                 class="md:p-2 p-2 bg-[#0192C8] text-sm md:text-xl text-white rounded-lg md:rounded-2xl hover:bg-white hover:border-2 hover:border-[#0192C8] hover:text-[#0192C8]  ">Contact
                 Us</button>
+            </a>
         </div>
 
     </div>
     
 
     
-    <div class="flex justify-center items-end mx-auto  w-full h-full md:w-5/6 md:h-2/3 p-3">
-        <div class="map-img pb-4 w-full   text-center  md:flex md:justify-center md:w-full md:h-full  ">
-            <img class="w-full  md:h-full" src="./img/map-image.png" alt="">
+    <div class="flex justify-center items-center md:items-end p-3 mt-20 md:p-0 md:mt-0  w-full h-full md:w-5/6 md:h-2/3">
+        <div class="map-img pb-4 w-11/12 h-4/6  text-center   md:flex md:justify-center md:w-full md:h-4/5">
+            <img class="w-full  md:h-5/6" src="./img/map-image.png" alt="">
         </div>
     </div>
     
 
+
+
+
+
+
+
+
+
+<div id="main-hidden" class="hidden h-4/6  absolute bottom-2">
+    
+    <div class="contact-btn text-center  mt-10 ">
+        <a href="mailto: support@embetter.in">
+            <button
+                class="md:p-2 p-2 bg-[#0192C8] text-sm md:text-xl text-white rounded-lg md:rounded-2xl hover:bg-white hover:border-2 hover:border-[#0192C8] hover:text-[#0192C8]  ">Contact
+                Us</button>
+        </a>
+    </div>
+  
 </div>
 
 
 
+
+
+            </div>
+
             
+            
+            <div id="footer"
+    class="flex flex-col w-11/12 px-2 absolute bottom-1 xl:static rounded-xl md:px-10 justify-center  md:py-1 md:flex md:flex-row md:items-center md:justify-between md:w-4/5 xl:w-3/5 md:rounded-3xl md:mt-3 md:mb-2 border-solid border-opacity-50 border border-black backdrop-blur-sm md:opacity-95 md:font-medium">
+
+    
+    <div class="flex justify-between items-center pt-2 text-sm md:flex md:flex-row md:w-2/3 md:pt-0 md:basis-1/2">
+        
+        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-center md:text-base ">
+            <p>Follow Us</p>
+            <div class="flex ">
+                
+                <a href="https://www.linkedin.com/company/embetter-technologies/" target="_blank"><img
+                        class=" md:px-1" src="/img/linkedin.svg" alt="Embetter LinkedIn Page"></a>
+            </div>
+        </div>
+
+        
+        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-center md:text-base ">
+            <p>Contact Us</p>
+            <div class="flex justify-between">
+                <a class="mx-2" href="mailto:%20support@embetter.in" ><img class=" md:px-1"
+                        src="/img/mail-logo.svg" alt="Email Logo"></a>
+                <a class="mx-2" href="https://cal.com/gsingh-embetter" target="_blank"><img class="p md:px-1"
+                        src="/img/meet-logo.svg" alt="Google Meet Logo"></a>
+            </div>
+        </div>
+    </div>
+
+
+        
+    <div class="flex flex-col items-center text-sm md:flex md:flex-col md:items-end md:justify-center md:text-sm md:basis-1/2"> 
+        <p class="pr-">Copyright 2024 @</p>
+        <p class="text-[#0192C8]">Embetter Technologies Pvt Ltd</p>
+    </div>
+</div>
 
         </div>
     </div>

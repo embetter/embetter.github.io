@@ -1,3 +1,4 @@
 baseURL = 'https://embetter.in'
 languageCode = 'en-us'
 title = 'Embetter Tech'
+version = '1.1.0'
