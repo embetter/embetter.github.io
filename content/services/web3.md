@@ -5,7 +5,7 @@ draft = false
 description = "At Embetter Tech, we don’t just adopt new technologies; we pioneer them. Our expert team specializes in Web3, ensuring your applications are decentralized, secure, and tailored to your specific needs. With our innovative Web3 solutions, you get a future-proof network that embraces the power of blockchain and decentralization."
 lastLine = "Ready to elevate your digital presence? Let’s make your Web3 applications smarter, more secure, and ready for the future—together."
 nextLink = "/services/devops"
-prevLink = "/services/dataops"
+prevLink = "/services/iot"
 image =  ""
 imageBig = "/img/web3.svg"
 
