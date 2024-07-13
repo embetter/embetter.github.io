@@ -2,7 +2,7 @@
 
 {{/* Div box starts here */}}
 
-<div id="about-container" class="p-4 overflow-scroll lg:overflow-hidden">
+<div id="about-container" class="p-2 md:p-4 overflow-y-scroll md:overflow-auto lg:overflow-visible  flex flex-col  justify-between lg:h-[80%] xl:h-auto">
     {{/* About us here */}}
     <div id="aboutUs" class="w-full p-2">
         <p class="text-xl md:text-2xl md:font-medium md:pb-1">{{.Params.Title}}</p>
@@ -11,16 +11,16 @@
     {{/* About us ends here */}}
 
     {{/* Our Story and Vision here */}}
-    <div id="about-center-text" class="md:flex md:flex-col  justify-between text-start  ">
-        <div class=" md:px-2 p-1">
+   
+        <div class=" md:px-2 p-2">
             <p class="text-lg md:text-xl font-medium md:pb-1">{{.Params.StoryTitle}}</p>
             <p class="text-sm md:text-sm md:font-normal">{{.Params.StoryDescription}}</p>
         </div>
-        <div class="justify-start  md:px-2 p-1">
+        <div class="justify-start  md:px-2 p-2">
             <p class="text-lg md:text-xl font-medium md:pb-1">{{.Params.VisionTitle}}</p>
             <p class="text-sm md:text-sm md:font-normal">{{.Params.VisionDescription}}</p>
         </div>
-    </div>
+    
     {{/* Our Story and Vision ends here */}}
 
 
