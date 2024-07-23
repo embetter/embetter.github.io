@@ -620,20 +620,8 @@ video {
   left: 1.25rem;
 }
 
-.left-\[280px\] {
-  left: 280px;
-}
-
-.right-\[280px\] {
-  right: 280px;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.top-2\/4 {
-  top: 50%;
 }
 
 .top-3 {
@@ -718,10 +706,6 @@ video {
   height: 40%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-24 {
   height: 6rem;
 }
@@ -740,6 +724,79 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[68\%\] {
+  height: 68%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
+.h-\[23\%\] {
+  height: 23%;
+}
+
+.h-\[25\%\] {
+  height: 25%;
+}
+
+.h-\[26\%\] {
+  height: 26%;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[35\%\] {
+  height: 35%;
+}
+
+.h-\[33\%\] {
+  height: 33%;
+}
+
+.h-\[38\%\] {
+  height: 38%;
+}
+
+.h-\[40\%\] {
+  height: 40%;
+}
+
+.h-\[42\%\] {
+  height: 42%;
+}
+
+.h-\[37\%\] {
+  height: 37%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[92\%\] {
+  height: 92%;
 }
 
 .w-1\/2 {
@@ -762,6 +819,10 @@ video {
   width: 2rem;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-\[95\%\] {
   width: 95%;
 }
@@ -775,8 +836,8 @@ video {
   width: 100%;
 }
 
-.w-\[90\%\] {
-  width: 90%;
+.w-4\/6 {
+  width: 66.666667%;
 }
 
 .grow {
@@ -869,6 +930,31 @@ video {
 .bg-\[\#0192C8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(1 146 200 / var(--tw-bg-opacity));
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -1310,12 +1396,20 @@ video {
     height: auto;
   }
 
-  .xl\:w-3\/5 {
-    width: 60%;
+  .xl\:h-\[72\%\] {
+    height: 72%;
+  }
+
+  .xl\:h-\[75\%\] {
+    height: 75%;
   }
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
   }
 
   .xl\:flex-row {
