@@ -2,23 +2,23 @@
 
 {{/* Div box starts here */}}
 
-<div id="about-container" class="p-2 md:p-4 overflow-y-scroll md:overflow-auto lg:overflow-visible justify flex flex-col  justify-between lg:h-[80%] xl:h-auto">
+<div id="about-container" class="p-2 md:p-4 overflow-y-scroll md:overflow-auto lg:overflow-visible text-justify flex flex-col  justify-between lg:h-[80%] xl:h-auto">
     {{/* About us here */}}
     <div id="aboutUs" class="w-full p-2">
-        <p class="text-xl md:text-2xl md:font-medium md:pb-1">{{.Params.Title}}</p>
-        <p class="text-sm md:text-sm md:font-normal">{{.Params.AboutDescription}}</p>
+        <p class="text-2xl md:text-2xl md:font-medium md:pb-1">{{.Params.Title}}</p>
+        <p class="text-base md:text-sm md:font-normal ">{{.Params.AboutDescription}}</p>
     </div>
     {{/* About us ends here */}}
 
     {{/* Our Story and Vision here */}}
    
         <div class=" md:px-2 p-2">
-            <p class="text-lg md:text-xl font-medium md:pb-1">{{.Params.StoryTitle}}</p>
-            <p class="text-sm md:text-sm md:font-normal">{{.Params.StoryDescription}}</p>
+            <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.StoryTitle}}</p>
+            <p class="text-base md:text-sm md:font-normal">{{.Params.StoryDescription}}</p>
         </div>
         <div class="justify-start  md:px-2 p-2">
-            <p class="text-lg md:text-xl font-medium md:pb-1">{{.Params.VisionTitle}}</p>
-            <p class="text-sm md:text-sm md:font-normal">{{.Params.VisionDescription}}</p>
+            <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.VisionTitle}}</p>
+            <p class="text-base md:text-sm md:font-normal">{{.Params.VisionDescription}}</p>
         </div>
     
     {{/* Our Story and Vision ends here */}}
@@ -27,16 +27,14 @@
     {{/* Why Choose Us starts here */}}
     <div id="team-corner" class="w-full p-1 ">
         <div>
-            <p class="text-lg md:text-lg font-medium md:pb-1">{{.Params.ChooseUsTitle}}</p>
-            <div class="text-sm md:text-sm">
+            <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.ChooseUsTitle}}</p>
+            <div class="text-base md:text-base justify">
                 <li class="pb-2">Innovation: Leading with the latest technologies.</li>
                 <li class="pb-2">Customization: Solutions tailored to your need</li>
                 <li class="pb-2">Expertise: Seasoned professionals across tech domains</li>
             </div>
 
             <p class="text-base md:text-sm pt-2">{{.Params.JoinUsText}}</p>
-
-
         </div>
     </div>
    

@@ -678,6 +678,18 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -797,6 +809,22 @@ video {
 
 .h-\[92\%\] {
   height: 92%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[48\%\] {
+  height: 48%;
+}
+
+.h-\[45\%\] {
+  height: 45%;
+}
+
+.h-\[46\%\] {
+  height: 46%;
 }
 
 .w-1\/2 {
