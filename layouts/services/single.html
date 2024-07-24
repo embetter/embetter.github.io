@@ -79,10 +79,10 @@
 
 
 {{/* For medium and large devices all the main content here*/}}
-<div class="md:flex md:flex-col md:p-1 h-full w-full hidden  ">
+<div class="md:flex md:flex-col md:p-1 h-full w-full hidden  text-justify">
 
     <!-- Top Heading of every service goes here -->
-    <div class="flex justify-center h-1/6 items-center ">
+    <div class="flex justify-center h-1/6 items-center my-2">
         <!-- title here -->
         <div class="  text-center text-sm md:text-3xl font-semibold ">
             <p>{{.Title}}</p>
@@ -90,31 +90,31 @@
     </div>
 
     <!-- Inside Columns for content and image and navigation buttons goes here -->
-    <div class="flex flex-row justify-center w-full h-full">
+    <div class="flex flex-row justify-center w-full h-full my-3">
 
         {{/* left navigation button */}}
-        <div class="md:flex justify-center items-center hidden w-32 relative -left-14  z-30 ">
+        <div class="md:flex justify-center items-center hidden  relative -left-8  z-30 ">
             <a class=" " href="{{.Params.PrevLink | relURL}}"><img src="/img/left-arrow.svg" width="54px" alt=""></a>
         </div>
 
         <!-- Description here -->
-        <div class="flex flex-col-reverse xl:flex-row justify-center items-center w-[90%]">
-        <div class="md:text-sm lg:text-base md:w-4/5 xl:w-1/2 h-full  flex flex-col justify-center items-center p-2 grow justify">
+        <div class="flex flex-col-reverse xl:flex-row justify-center items-center w-[90%] ">
+        <div class="md:text-sm lg:text-base md:w-4/5 xl:w-1/2 h-full  flex flex-col justify-center items-center p-2 ">
             <p>{{.Params.Description}}</p>
             <br>
             <p>{{.Params.lastLine}}</p>
         </div>
 
         <!-- Display image here -->
-        <div class="flex justify-center items-center w-1/2 grow">
+        <div class="flex justify-center items-center w-1/2 ">
             <div class="w-full text-center  md:flex md:justify-center md:w-full md:h-full ">
-                <img class="w-full " src="{{.Params.ImageBig}}" alt="">
+                <img class="w-[90%]" src="{{.Params.ImageBig}}" alt="">
             </div>
         </div>
     </div>
 
         {{/* right navigation button */}}
-        <div class="md:flex justify-center items-center hidden w-32 relative -right-14 m-0">
+        <div class="md:flex justify-center items-center hidden  relative -right-8">
             <a class="" href="{{.Params.NextLink | relURL}}"><img src="/img/right-arrow.svg" width="54px" alt=""></a>
         </div>
 
