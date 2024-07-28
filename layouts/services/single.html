@@ -1,4 +1,7 @@
 {{define "nav_icons"}}
+
+<div id="nav-icon" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-2">
+
 {{/* <div id="service_menu" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-6"> */}}
     <div class="flex flex-col items-center justify-center md:px-2">
         <span><a href="{{"/services/development" | relURL}}"><img src="{{.Params.IconDevelopment | relURL}}"
@@ -32,11 +35,13 @@
     </div>
     {{/*
 </div> */}}
+</div>
 
 
 {{end}}
 
 {{define "main"}}
+<div id="page-content" class="flex flex-col justify-between md:flex md:flex-col  md:justify-center items-center container rounded-2xl w-11/12 h-4/6 opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl  md:border-[0.9px] md:w-4/5 md:h-[60%] lg:h-[50%]  xl:w-3/5 xl:h-[75%] md:rounded-3xl md:mt-0 font-[Alkia] ">
 
 {{/* Div box starts here */}}
 <div class="flex flex-col items-start justify-between h-full md:hidden w-full p-2">
@@ -122,4 +127,5 @@
 </div>
 {{/* Ends here*/}}
 
+</div>
 {{end}}

@@ -628,6 +628,22 @@ video {
   top: 9rem;
 }
 
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -649,6 +665,11 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mb-1 {
@@ -677,6 +698,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -1173,6 +1198,10 @@ video {
 
   .md\:overflow-auto {
     overflow: auto;
+  }
+
+  .md\:overflow-visible {
+    overflow: visible;
   }
 
   .md\:rounded-2xl {

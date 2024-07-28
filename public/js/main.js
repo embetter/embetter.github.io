@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const footer = document.getElementById('footer');
 
     //for main content of each page
-    const pageContent = document.getElementById('page-content');
+    const pageContent = document.getElementById('page-content');    
 
     //for heading portion of page
     const heading_portion = document.getElementById('heading-portion'); 
