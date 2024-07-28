@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //for main content of each page
     const pageContent = document.getElementById('page-content');
+
+    //for heading portion of page
+    const heading_portion = document.getElementById('heading-portion'); 
   
     
     
@@ -26,9 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
         //background is blurred
         containerDIV.classList.add('backdrop-blur-md');
 
-        //footer and main content display hidden
+        //footer, main content and heading portion display hidden
         footer.style.display = 'none';
         pageContent.style.display='none';
+        heading_portion.style.display ='none';
     });
 
     cross.addEventListener('click', function() {
@@ -37,9 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navHidden.style.display = 'none';
         hamburger.style.display = 'block';
 
-        //footer and main content back to flex display
+        //footer, main content and heading portion back to flex display
         footer.style.display = 'flex';
         pageContent.style.display='flex';
+        heading_portion.style.display='block'
         //background blur removed
         containerDIV.classList.remove('backdrop-blur-md');
     });

@@ -41,7 +41,7 @@
 {{/* Div box starts here */}}
 <div class="flex flex-col items-start justify-between h-full md:hidden w-full p-2">
     <!-- text and button here for small devices-->
-    <div class="w-full h-[92%] flex flex-col items-center text-justify-start p-2 text-justify ">
+    <div class="w-full  flex flex-col items-center text-justify-start p-2 text-justify overflow-hidden">
 
         <!-- Display image here -->
         <div class="flex justify-center mb-2">
@@ -56,7 +56,7 @@
         </div>
         
         <!-- Description here -->
-        <div class="text-base h-3/6  overflow-y-scroll p-2">
+        <div class="text-base overflow-y-scroll p-2">
             <p>{{.Params.Description}}</p>
             <br>
             <p>{{.Params.lastLine}}</p>
@@ -65,12 +65,12 @@
     <!-- title and description ends -->    
 
     {{/* Small Devices navigation */}}
-    <div id="service_navigation" class="flex justify-center items-start w-full md:hidden ">
+    {{/*  <div id="service_navigation" class="flex justify-center items-start w-full md:hidden ">
         <div class="flex ">
             <a class="pr-4" href="{{.Params.PrevLink | relURL}}"><img src="/img/left-arrow.svg" width="45px" alt=""></a>
             <a href="{{.Params.NextLink | relURL}}"><img src="/img/right-arrow.svg" width="45px" alt=""></a>
         </div>
-    </div>
+    </div>  */}}
     {{/* Small Devices navigation ends*/}}
 </div>
 {{/* Div box ends here */}}

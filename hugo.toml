@@ -1,4 +1,30 @@
 baseURL = 'https://embetter.in'
 languageCode = 'en-us'
 title = 'Embetter Tech'
+navTitle = "Embetter"
 version = '1.3.0'
+
+[params]
+[params.services]
+serviceDevelopment = "Development (web/ App Development)"
+serviceDesign = "Design (UI/UX)"
+serviceData = "DataOps"
+serviceEmbedded = "Embedded Systems (Firmware Development)"
+serviceIot = "IOT (Bluetooth/ LoRaWAN Integration)"
+serviceWeb3 = "Web 3.0"
+serviceDevOps = "DevOps"
+
+[params.serviceDescription]
+descriptionDevelopment = "At Embetter Tech, we don’t just create apps and websites; we craft digital experiences. Our expert team designs and develops mobile apps and websites that are not only visually stunning but also highly functional and tailored to your specific needs. With our innovative solutions, you get a digital presence that scales with your ambitions and engages your audience effectively."
+
+descriptionDesign = "At Embetter Tech, we don’t just design interfaces; we create user experiences. Our expert team excels in UI/UX design, web design, and prototyping, ensuring your digital products are intuitive, visually appealing, and tailored to your specific needs. With our innovative approach, you get designs that not only look great but also provide seamless user experiences."
+
+descriptionData = "At Embetter Tech, we don’t just manage data; we optimize it. Our expert team specializes in DataOps, ensuring your data pipelines are efficient, reliable, and tailored to your specific needs. With our innovative DataOps solutions, you get streamlined data processes that scale with your ambitions and drive informed decision-making."
+
+descriptionEmbedded = "At Embetter Tech, we don’t just write code; we build the brains behind your devices. Our expert team specializes in developing cutting-edge firmware for embedded systems, tailored to your specific needs. With our solutions, your devices will perform seamlessly, stay reliable, and ahead of the technological curve."
+
+descriptionIot = "At Embetter Tech, we don’t just develop software; we create ecosystems. Our team of experts ensures that your IoT solutions are not only cutting-edge but also tailored to your specific needs. With our innovative Bluetooth and LoRaWAN integration, you get a future-proof network that scales with your ambitions."
+
+descriptionWeb3 = "At Embetter Tech, we don’t just adopt new technologies; we pioneer them. Our expert team specializes in Web3, ensuring your applications are decentralized, secure, and tailored to your specific needs. With our innovative Web3 solutions, you get a future-proof network that embraces the power of blockchain and decentralization."
+
+descriptionDevOps = "At Embetter Tech, we don’t just build software; we accelerate its delivery. Our expert team specializes in DevOps, ensuring your development and operations are seamless, efficient, and tailored to your specific needs. With our innovative DevOps solutions, you get faster deployments, improved collaboration, and a scalable infrastructure that grows with your ambitions."

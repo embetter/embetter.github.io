@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/logo.svg" type="image/icon type">
-    <title>Embetter</title>
+    <title>{{.Site.Title}}</title>
     <link rel="stylesheet" href="{{"/css/main.css" | relURL}}">
 
     {{/*
@@ -27,6 +27,12 @@
             {{/*  For specific navigation over a blog post  */}}
             <div id="nav-icon" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-2">
                 {{block "nav_icons" .}}
+                {{end}}
+            </div>
+
+            {{/*  For some heading on the top  */}}
+            <div id="heading-portion">
+                {{block "heading" .}}
                 {{end}}
             </div>
 
