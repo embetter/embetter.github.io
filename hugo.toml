@@ -2,7 +2,7 @@ baseURL = 'https://embetter.in'
 languageCode = 'en-us'
 title = 'Embetter Tech'
 navTitle = "Embetter"
-version = '1.3.0'
+version = '1.4.0'
 
 [params]
 [params.services]
