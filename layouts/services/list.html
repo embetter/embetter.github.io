@@ -1,0 +1,152 @@
+{{define "heading"}}
+
+{{end}}
+
+{{define "main"}}
+
+<div id="page-content" class=" flex flex-col  justify-between items-center w-full px-3 font-[alkia]">
+    <h1 class="text-2xl mb-1 mt-3">Services</h1>
+    {{/* Covering content */}}
+
+    <div class="flex flex-col w-full justify-between overflow-y-scroll ">
+
+        {{/* Development box */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full  flex my-2">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/webdev.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceDevelopment}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionDevelopment}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/development"><button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More</button></a>
+                </span>
+            </div>
+        </div>
+        {{/* Development box ends */}}
+
+        {{/* Design Box */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/design.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceDesign}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionDesign}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/design"><button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More</button></a>
+                </span>
+            </div>
+        </div>
+        {{/* Design Box ends */}}
+
+        {{/* Data Box */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/dataOps.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceData}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionData}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/dataOps"><button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More</button></a>
+                </span>
+            </div>
+        </div>
+        {{/* Data box ends */}}
+
+        {{/*  Embedded box  */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/embedded.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceEmbedded}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionEmbedded}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/embedded-systems"><button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More</button></a>
+                </span>
+            </div>
+        </div>
+        {{/*  Embedded box ends  */}}
+
+        {{/*  Iot Box  */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/Iot.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceIot}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionIot}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/Iot"><button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More</button></a>
+                </span>
+            </div>
+        </div>
+        {{/*  Iot Box ends  */}}
+
+        {{/*  Web3 box  */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/Web3.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceWeb3}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionWeb3}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/web3"><button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More</button></a>
+                </span>
+            </div>
+        </div>
+        {{/*  Web3 box ends  */}}
+
+        {{/*  DevOps box  */}}
+        <div
+            class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2 mb-4">
+            <div class="w-[45%] flex justify-center">
+                <img src="/img/devOps.svg" alt="design thumbnail image">
+            </div>
+            <div class="w-3/5 p-2 flex flex-col justify-between">
+                <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceDevOps}}</h1>
+                <p class="truncate-text text-sm leading-relaxed">
+                    {{.Site.Params.serviceDescription.descriptionDevOps}}</p>
+                <span class="my-2 flex justify-end border-solid border-black">
+                    <a class="mr-2" href="/services/devOps">
+                        <button
+                            class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
+                            More
+                        </button>
+                    </a>
+                </span>
+            </div>
+        </div>
+        {{/*  DevOps box ends  */}}
+
+    </div>
+</div>
+
+{{end}}

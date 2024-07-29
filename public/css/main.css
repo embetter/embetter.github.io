@@ -47,6 +47,13 @@ body{
     font-family: alkia;
 }
 
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
 @media (max-width: 640px) {
     body{
         background-image: url('/img/background-phone.png'); 
@@ -65,7 +72,7 @@ body{
         background-position-y: 10em;     
     }   
 }
-/* 
-*{
+
+/* *{
     background-color: rgba(0,0,0,0.1);
 } */

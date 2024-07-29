@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/logo.svg" type="image/icon type">
-    <title>Embetter</title>
+    <title>{{.Site.Title}}</title>
     <link rel="stylesheet" href="{{"/css/main.css" | relURL}}">
 
     {{/*
@@ -17,24 +17,34 @@
 
 <body class="w-full h-full">
 
-    <div id="container_div" class="w-full h-full flex flex-col items-center justify-center">
+    <div id="container_div" class="w-full h-full flex flex-col items-center justify-center overflow-hidden">
 
-        <div class="w-full h-full flex flex-col items-center justify-center ">
+        <div class="w-full h-full flex flex-col items-center justify-between overflow-y-scroll md:overflow-visible">
 
             {{/*  Navbar  */}}
             {{ partial "navbar" .}}
 
             {{/*  For specific navigation over a blog post  */}}
-            <div id="nav-icon" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-2">
+            
                 {{block "nav_icons" .}}
                 {{end}}
-            </div>
+            
 
-            {{/*  Main Content for each Page goes here  */}}
-            <div id="page-content" class="flex flex-col justify-between md:flex md:flex-col  md:justify-center items-center container rounded-2xl w-11/12 h-4/6 opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl  md:border-[0.9px] md:w-4/5 md:h-[60%] lg:h-[50%]  xl:w-3/5 xl:h-[75%] md:rounded-3xl md:mt-0 font-[Alkia] ">
-                {{block "main" . }}
-                {{end}}
-            </div>
+           
+        
+
+            {{/*  For listing of mobile discovery view  */}}
+            {{block "mobile-list" .}}
+            {{end}}
+
+
+           
+                {{/*  Main Content for each Page goes here  */}}
+                
+                    {{block "main" . }}
+                    {{end}}
+              
+          
 
             {{/*  Footer goes here  */}}
             
