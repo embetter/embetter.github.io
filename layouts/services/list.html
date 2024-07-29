@@ -14,14 +14,14 @@
         <div
             class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full  flex my-2">
             <div class="w-[45%] flex justify-center">
-                <img src="/img/webdev.svg" alt="design thumbnail image">
+                <img src="/img/webdev.svg" alt="Development thumbnail image">
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceDevelopment}}</h1>
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionDevelopment}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/development"><button
+                    <a class="mr-2" href="{{"/services/development" | relURL}}"><button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More</button></a>
                 </span>
@@ -33,14 +33,14 @@
         <div
             class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
             <div class="w-[45%] flex justify-center">
-                <img src="/img/design.svg" alt="design thumbnail image">
+                <img src="/img/design.svg" alt="Design thumbnail image">
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceDesign}}</h1>
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionDesign}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/design"><button
+                    <a class="mr-2" href="{{"/services/design" | relURL}}"><button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More</button></a>
                 </span>
@@ -52,14 +52,14 @@
         <div
             class="rounded-3xl  opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md shadow-md w-full flex my-2">
             <div class="w-[45%] flex justify-center">
-                <img src="/img/dataOps.svg" alt="design thumbnail image">
+                <img src="/img/dataOps.svg" alt="DataOps thumbnail image">
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold mb-1">{{.Site.Params.services.serviceData}}</h1>
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionData}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/dataOps"><button
+                    <a class="mr-2" href="{{"/services/dataops" | relURL}}"><button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More</button></a>
                 </span>
@@ -78,7 +78,7 @@
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionEmbedded}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/embedded-systems"><button
+                    <a class="mr-2" href="{{"/services/embedded-systems" | relURL}}"><button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More</button></a>
                 </span>
@@ -97,7 +97,7 @@
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionIot}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/Iot"><button
+                    <a class="mr-2" href="{{"/services/iot" | relURL}}"><button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More</button></a>
                 </span>
@@ -116,7 +116,7 @@
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionWeb3}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/web3"><button
+                    <a class="mr-2" href="{{"/services/web3" | relURL}}"><button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More</button></a>
                 </span>
@@ -135,7 +135,7 @@
                 <p class="truncate-text text-sm leading-relaxed">
                     {{.Site.Params.serviceDescription.descriptionDevOps}}</p>
                 <span class="my-2 flex justify-end border-solid border-black">
-                    <a class="mr-2" href="/services/devOps">
+                    <a class="mr-2" href="{{"/services/devops" | relURL}}">
                         <button
                             class="p-2 border-solid border-2 border-black border-opacity-50 rounded-2xl text-xs">Read
                             More
