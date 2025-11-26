@@ -4,7 +4,7 @@
     <title>Abouts on Embetter Tech</title>
     <link>http://localhost:1313/about/</link>
     <description>Recent content in Abouts on Embetter Tech</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jul 2024 12:59:49 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
