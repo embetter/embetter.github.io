@@ -29,6 +29,20 @@ Now, you can use Hugo to serve the website locally. Run the following command:
 hugo server
 ```
 
+### Download dependencies
+Download dependencies for tailwind css:
+
+```bash
+npm install
+```
+
+### Start Tailwind CSS
+Download dependencies for tailwind css:
+
+```bash
+npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch
+```
+
 ### Access the Local Website
 
 Once the server is up and running, open your favorite web browser and navigate to:
