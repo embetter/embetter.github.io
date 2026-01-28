@@ -1,19 +1,24 @@
 {{define "main"}}
 
-<div id="page-content" class="flex flex-col justify-between md:flex md:flex-col  md:justify-center items-center container rounded-2xl w-11/12 h-4/6 opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl  md:border-[0.9px] md:w-4/5 md:h-[60%] lg:h-[50%]  xl:w-3/5 xl:h-[75%] md:rounded-3xl md:mt-0 font-[Alkia] ">
+<div id="page-content"
+  class="flex flex-col overflow-y-auto justify-start min-h-0
+         items-center container rounded-2xl w-11/12
+         max-h-screen h-4/6 md:h-full opacity-95 border border-black backdrop-blur-md
+         shadow-2xl md:w-4/5 xl:w-3/5 md:rounded-3xl font-[Alkia]">
 
-{{/* Div box starts here */}}
 
-<div id="about-container" class="p-2 md:p-4 overflow-y-scroll md:overflow-auto lg:overflow-visible text-justify flex flex-col  justify-between lg:h-[80%] xl:h-auto">
-    {{/* About us here */}}
-    <div id="aboutUs" class="w-full p-2">
-        <p class="text-2xl md:text-2xl md:font-medium md:pb-1">{{.Params.Title}}</p>
-        <p class="text-base md:text-sm md:font-normal ">{{.Params.AboutDescription}}</p>
-    </div>
-    {{/* About us ends here */}}
+    {{/* Div box starts here */}}
 
-    {{/* Our Story and Vision here */}}
-   
+    <div id="about-container" class="p-2 md:p-4  text-justify flex flex-col  justify-between lg:h-[80%] xl:h-auto">
+        {{/* About us here */}}
+        <div id="aboutUs" class="w-full p-2">
+            <p class="text-2xl md:text-2xl md:font-medium md:pb-1">{{.Params.Title}}</p>
+            <p class="text-base md:text-sm md:font-normal ">{{.Params.AboutDescription}}</p>
+        </div>
+        {{/* About us ends here */}}
+
+        {{/* Our Story and Vision here */}}
+
         <div class=" md:px-2 p-2">
             <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.StoryTitle}}</p>
             <p class="text-base md:text-sm md:font-normal">{{.Params.StoryDescription}}</p>
@@ -22,28 +27,28 @@
             <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.VisionTitle}}</p>
             <p class="text-base md:text-sm md:font-normal">{{.Params.VisionDescription}}</p>
         </div>
-    
-    {{/* Our Story and Vision ends here */}}
+
+        {{/* Our Story and Vision ends here */}}
 
 
-    {{/* Why Choose Us starts here */}}
-    <div id="team-corner" class="w-full p-1 ">
-        <div>
-            <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.ChooseUsTitle}}</p>
-            <div class="text-base md:text-base justify">
-                <li class="pb-2">Innovation: Leading with the latest technologies.</li>
-                <li class="pb-2">Customization: Solutions tailored to your need</li>
-                <li class="pb-2">Expertise: Seasoned professionals across tech domains</li>
+        {{/* Why Choose Us starts here */}}
+        <div id="team-corner" class="w-full p-1 ">
+            <div>
+                <p class="text-xl md:text-xl font-medium md:pb-1">{{.Params.ChooseUsTitle}}</p>
+                <div class="text-base md:text-base justify">
+                    <li class="pb-2">Innovation: Leading with the latest technologies.</li>
+                    <li class="pb-2">Customization: Solutions tailored to your need</li>
+                    <li class="pb-2">Expertise: Seasoned professionals across tech domains</li>
+                </div>
+
+                <p class="text-base md:text-sm pt-2">{{.Params.JoinUsText}}</p>
             </div>
-
-            <p class="text-base md:text-sm pt-2">{{.Params.JoinUsText}}</p>
         </div>
+
     </div>
-   
-</div>
-{{/* Team corner ends here */}}
+    {{/* Team corner ends here */}}
 
 
-{{/* Div box ends here */}}
+    {{/* Div box ends here */}}
 </div>
 {{end}}
