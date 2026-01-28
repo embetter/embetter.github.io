@@ -1,38 +1,45 @@
 {{define "main"}}
 <div id="page-content" class="flex flex-col justify-between md:flex md:flex-col  md:justify-center items-center container rounded-2xl w-11/12 h-4/6 opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl  md:border-[0.9px] md:w-4/5 md:h-[60%] lg:h-[50%]  xl:w-3/5 xl:h-[75%] md:rounded-3xl md:mt-0 font-[Alkia] ">
 
-<div class=" w-full h-full flex flex-col items-center justify-between">
-    <!-- text and button here -->
-    <div class="w-full h-1/2 flex flex-col items-center justify-center  ">
+<div class="w-full h-screen flex flex-col overflow-y-auto items-center">
 
-        <!-- text here -->
-        <div class="description-text  text-black text-center text-base md:text-3xl font-medium pt-2">
-            <p class="p-2">Your <span class=" text-xl md:text-3xl font-normal ">Tech Partner</span>
+    <!-- Top Content -->
+    <div class="w-full flex flex-col items-center justify-center pt-6">
+        <div class="text-black text-center text-base md:text-3xl font-medium">
+            <p class="p-2">
+                Your <span class="text-xl md:text-3xl font-normal">Tech Partner</span>
             </p>
-            <p class="p-2">for a <span class=" text-xl md:text-3xl font-normal text-[#0192C8]"> Better Tomorrow.</span></p>
-
+            <p class="p-2">
+                for a <span class="text-xl md:text-3xl font-normal text-[#0192C8]">
+                    Better Tomorrow.
+                </span>
+            </p>
         </div>
 
-        <!-- button here -->
-        <div class="contact-btn text-center p-2  ">
-            <a href="mailto: support@embetter.in">
-            <button
-                class="md:p-2 p-2 bg-[#0192C8] text-sm md:text-xl text-white rounded-lg md:rounded-2xl hover:bg-white hover:border-2 hover:border-[#0192C8] hover:text-[#0192C8]  ">Contact
-                Us</button>
+        <div class="text-center p-2">
+            <a href="mailto:support@embetter.in">
+                <button
+                    class="p-2 bg-[#0192C8] text-sm md:text-xl text-white rounded-lg md:rounded-2xl">
+                    Contact Us
+                </button>
             </a>
         </div>
-
     </div>
-    <!-- text and button ends -->
 
-    <!-- Map image here -->
-    <div class="flex justify-center items-center md:items-center p-3  md:p-0   w-full h-2/5  md:h-1/2 ">
-        <div class="map-img md:w-3/4 w-[95%] h-2/3 md:h-2/3  md:p-2  flex justify-center items-center  ">
-            <img class="  " src="./img/map-image.png" alt="HomePage Image">
+    <!-- ✅ Spacer pushes map down -->
+    <div class="flex-1"></div>
+
+    <!-- Bottom Map -->
+    <div class="w-full flex justify-center items-end pb-6">
+        <div class="md:w-3/4 w-[95%]">
+            <img src="./img/map-image.png"
+                 alt="HomePage Image"
+                 class="w-full h-auto object-contain" />
         </div>
     </div>
-    <!-- Map image ends -->
+
 </div>
+
 
 
 <!-- mid section ends -->
