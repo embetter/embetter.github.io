@@ -2,8 +2,8 @@
 title = 'Embedded Systems (Firmware Development)'
 date = 2024-06-28T01:50:37+05:30
 draft = false
-description = "At Embetter Tech, we don’t just write code; we build the brains behind your devices. Our expert team specializes in developing cutting-edge firmware for embedded systems, tailored to your specific needs. With our solutions, your devices will perform seamlessly, stay reliable, and ahead of the technological curve."
-lastLine = "Ready to bring your devices to life? Let’s make your embedded systems smarter and more efficient—together."
+description = "We write the firmware that runs on your hardware. From bare-metal C on microcontrollers to RTOS-based systems (Zephyr, FreeRTOS), our embedded engineers handle bootloaders, OTA firmware updates, driver integration, communication protocols (SPI, I2C, UART, CAN), and power optimisation. We test on real hardware in the loop so your device behaves reliably in production."
+lastLine = "Have a prototype that needs production-grade firmware? Let's talk about your hardware requirements and timeline."
 nextLink = "/services/iot"
 prevLink = "/services/dataops"
 image =  ""

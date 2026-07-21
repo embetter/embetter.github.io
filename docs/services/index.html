@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/logo.svg" type="image/icon type">
@@ -16,18 +16,18 @@
 
 <body class="w-full h-full">
 
-    <div id="container_div" class="w-full h-full flex flex-col items-center justify-center overflow-hidden">
+    <div id="container_div" class="w-full h-full flex flex-col items-center justify-center">
 
-        <div class="w-full h-full flex flex-col items-center justify-between overflow-y-scroll md:overflow-visible">
+        <div class="w-full h-full flex flex-col items-center justify-between overflow-y-auto md:overflow-visible">
 
             
              
  <nav
- class="w-full h-[10%] flex  justify-between items-center sticky top-0 xl:pt-0 xl:sticky md:px-8  md:w-4/5 xl:w-3/5 md:mx-auto md:mt-2  md:h-[15%] z-30 pb-6 bg-white">
+ class="w-full flex justify-between items-center sticky top-0 md:px-8 z-30 pb-6 bg-white/30 backdrop-blur-md">
 
  
  <div class="flex flex-col">
-     <a class="flex md:items-center md:h-14 w-fit p-2" href="http://localhost:1313/">
+     <a class="flex md:items-center md:h-14 w-fit p-2" href="https://embetter.in/">
 
          
          <img class="embetter-logo-img  md:w-12 md:h-12 w-8 ml-3 mr-2 md:ml-0 md:mr-0 "
@@ -49,6 +49,10 @@
     
      <li class="nav-item px-4 hover:text-2xl font-[atyp]">
          <a class="nav-link active " href="/about/about">About Us</a>
+     </li>
+
+     <li class="nav-item px-4 hover:text-2xl font-[atyp]">
+         <a class="nav-link active " href="/reports">Reports</a>
      </li>
  </ul>  
 </div>
@@ -77,8 +81,12 @@
            <li class=" ">About Us</li>
            <li class="">&#10095;</li>
        </a>
+       <a class="flex  justify-between p-2 mt-2" href="/reports">
+           <li class=" ">Reports</li>
+           <li class="">&#10095;</li>
+       </a>
 </ul>
-</span>`
+</span>
 </div>
 
  
@@ -107,11 +115,10 @@
                 
                     
 
-<div id="page-content" class=" flex flex-col  justify-between items-center w-full px-3 font-[alkia] text-start">
+<div id="page-content" class="flex flex-col items-center w-full px-3 font-[alkia] text-start my-[75px]">
     <h1 class="text-2xl mb-1 mt-3 ">Services</h1>
-    
 
-    <div class="flex flex-col w-full justify-between overflow-y-scroll text-justify">
+    <div class="flex flex-col w-full text-justify">
 
         
         <div
@@ -121,7 +128,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">Development (web/ App Development)</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just create apps and websites; we craft digital experiences. Our expert team designs and develops mobile apps and websites that are not only visually stunning but also highly functional and tailored to your specific needs. With our innovative solutions, you get a digital presence that scales with your ambitions and engages your audience effectively.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/development"><button
@@ -140,7 +147,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">Design (UI/UX)</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just design interfaces; we create user experiences. Our expert team excels in UI/UX design, web design, and prototyping, ensuring your digital products are intuitive, visually appealing, and tailored to your specific needs. With our innovative approach, you get designs that not only look great but also provide seamless user experiences.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/design"><button
@@ -159,7 +166,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">DataOps</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just manage data; we optimize it. Our expert team specializes in DataOps, ensuring your data pipelines are efficient, reliable, and tailored to your specific needs. With our innovative DataOps solutions, you get streamlined data processes that scale with your ambitions and drive informed decision-making.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/dataops"><button
@@ -178,7 +185,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">Embedded Systems (Firmware Development)</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just write code; we build the brains behind your devices. Our expert team specializes in developing cutting-edge firmware for embedded systems, tailored to your specific needs. With our solutions, your devices will perform seamlessly, stay reliable, and ahead of the technological curve.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/embedded-systems"><button
@@ -197,7 +204,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">IOT (Bluetooth/ LoRaWAN Integration)</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just develop software; we create ecosystems. Our team of experts ensures that your IoT solutions are not only cutting-edge but also tailored to your specific needs. With our innovative Bluetooth and LoRaWAN integration, you get a future-proof network that scales with your ambitions.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/iot"><button
@@ -216,7 +223,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">Web 3.0</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just adopt new technologies; we pioneer them. Our expert team specializes in Web3, ensuring your applications are decentralized, secure, and tailored to your specific needs. With our innovative Web3 solutions, you get a future-proof network that embraces the power of blockchain and decentralization.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/web3"><button
@@ -235,7 +242,7 @@
             </div>
             <div class="w-3/5 p-2 flex flex-col justify-between">
                 <h1 class="text-base font-bold font-[dotFont] mb-1">DevOps</h1>
-                <p class="truncate-text text-sm leading-relaxed">
+                <p class=" text-sm leading-relaxed">
                     At Embetter Tech, we don’t just build software; we accelerate its delivery. Our expert team specializes in DevOps, ensuring your development and operations are seamless, efficient, and tailored to your specific needs. With our innovative DevOps solutions, you get faster deployments, improved collaboration, and a scalable infrastructure that grows with your ambitions.</p>
                 <span class="my-2 flex justify-end border-solid border-black">
                     <a class="mr-2" href="/services/devops">
@@ -262,19 +269,18 @@
     class="flex flex-col w-11/12 px-2 relative bottom-1 xl:static rounded-xl md:px-10 justify-center  md:py-1 md:flex md:flex-row md:items-center md:justify-between md:w-4/5 xl:w-3/5 md:rounded-3xl md:mt-3 md:mb-2 border-solid border-opacity-50 border border-black backdrop-blur-sm md:opacity-95 md:font-medium">
 
     
-    <div class="flex justify-between items-center pt-2 text-sm md:flex md:flex-row md:w-2/3 md:pt-0 md:basis-1/2">
+    <div class="flex justify-between items-start pt-2 text-sm md:flex md:flex-row w-full md:gap-x-8 md:pt-0 md:basis-1/2">
         
-        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-center md:text-base ">
+        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-start md:text-base ">
             <p>Follow Us</p>
             <div class="flex ">
-                
                 <a href="https://www.linkedin.com/company/embetter-technologies/" target="_blank"><img
                         class=" md:px-1" src="/img/linkedin.svg" alt="Embetter LinkedIn Page"></a>
             </div>
         </div>
 
         
-        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-center md:text-base ">
+        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-start md:text-base ">
             <p>Contact Us</p>
             <div class="flex justify-between">
                 <a class="mx-2" href="mailto:%20support@embetter.in" ><img class=" md:px-1"
@@ -283,15 +289,29 @@
                         src="/img/meet-logo.svg" alt="Google Meet Logo"></a>
             </div>
         </div>
+
+        
+        <div class="flex flex-col items-center md:flex md:flex-col md:items-center md:justify-start md:text-base ">
+            <p class="mb-1">Policies</p>
+            <div class="flex flex-row items-center gap-1 text-xs md:text-sm">
+                <a class="hover:text-[#0192C8]" href="/terms">Terms</a>
+                <span class="text-gray-400 mx-2">|</span>
+                <a class="hover:text-[#0192C8]" href="/privacy">Privacy</a>
+                <span class="text-gray-400 mx-2">|</span>
+                <a class="hover:text-[#0192C8]" href="/refund">Refund</a>
+            </div>
+        </div>
     </div>
 
 
         
     <div class="flex flex-col items-center text-sm md:flex md:flex-col md:items-end md:justify-center md:text-sm md:basis-1/2"> 
-        <p class="pr-">Copyright 2024 @</p>
+        <p class="pr-">Copyright 2023 - 2026 @</p>
         <p class="text-[#0192C8]">Embetter Technologies Pvt Ltd</p>
+        <p class="text-sm">12 First Floor, Hargovind Enclave, Delhi 110092</p>
     </div>
 </div>
+
 
         </div>
     </div>

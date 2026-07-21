@@ -2,8 +2,8 @@
 title = 'Design (UI/UX Design)'
 date = 2024-06-28T01:50:37+05:30
 draft = false
-description = "At Embetter Tech, we don’t just design interfaces; we create user experiences. Our expert team excels in UI/UX design, web design, and prototyping, ensuring your digital products are intuitive, visually appealing, and tailored to your specific needs. With our innovative approach, you get designs that not only look great but also provide seamless user experiences."
-lastLine = "Ready to enhance your user experience? Let’s create UI/UX designs and prototypes that are smarter, more intuitive, and ready for the future—together."
+description = "Good design is the difference between a product users tolerate and one they love. We create wireframes, interactive prototypes, and polished UI that align with your brand and your users' mental models. Every screen we design is tested for clarity, accessibility, and flow—so your users accomplish what they came to do."
+lastLine = "Want to know if your current UX is costing you users? Let's audit your product and identify the friction points."
 nextLink = "/services/dataops"
 prevLink = "/services/development"
 image =  ""

@@ -1,68 +1,94 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Embetter Tech</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Embetter Tech</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jul 2024 19:13:24 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Web 3.0</title>
-      <link>http://localhost:1313/services/web3/</link>
-      <pubDate>Mon, 08 Jul 2024 19:13:24 +0530</pubDate>
-      <guid>http://localhost:1313/services/web3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About Us</title>
-      <link>http://localhost:1313/about/about/</link>
-      <pubDate>Fri, 05 Jul 2024 12:59:49 +0530</pubDate>
-      <guid>http://localhost:1313/about/about/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DataOps</title>
-      <link>http://localhost:1313/services/dataops/</link>
-      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>http://localhost:1313/services/dataops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Design (UI/UX Design)</title>
-      <link>http://localhost:1313/services/design/</link>
-      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>http://localhost:1313/services/design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Development (web/ App Development)</title>
-      <link>http://localhost:1313/services/development/</link>
-      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>http://localhost:1313/services/development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DevOps</title>
-      <link>http://localhost:1313/services/devops/</link>
-      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>http://localhost:1313/services/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Embedded Systems (Firmware Development)</title>
-      <link>http://localhost:1313/services/embedded-systems/</link>
-      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>http://localhost:1313/services/embedded-systems/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IOT (Bluetooth/ LoRaWAN Integration)</title>
-      <link>http://localhost:1313/services/iot/</link>
-      <pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
-      <guid>http://localhost:1313/services/iot/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Embetter Tech</title>
+		<link>https://embetter.in/</link>
+		<description>Recent content on Embetter Tech</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0530</lastBuildDate>
+		
+			<atom:link href="https://embetter.in/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Privacy Policy</title>
+				<link>https://embetter.in/privacy/</link>
+				<pubDate>Mon, 22 Jul 2024 00:00:00 +0530</pubDate>
+				<guid>https://embetter.in/privacy/</guid>
+				<description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Information We Collect&lt;/strong&gt; – We collect only the information necessary to provide our services, such as contact details and project requirements.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Client Data Privacy&lt;/strong&gt; – All client data, including project specifications, business information, and communications, is kept strictly private.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intellectual Property Confidentiality&lt;/strong&gt; – Any source code, designs, or deliverables shared with or created for the client are treated as confidential and will not be disclosed.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;No Third-Party Sharing&lt;/strong&gt; – We do not sell, share, or transfer client data or project-related information to any third parties for processing or any other purpose.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Refund Policy</title>
+				<link>https://embetter.in/refund/</link>
+				<pubDate>Mon, 22 Jul 2024 00:00:00 +0530</pubDate>
+				<guid>https://embetter.in/refund/</guid>
+				<description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Advance Payments&lt;/strong&gt; – All advance payments made toward a project are non-refundable, as they secure project commencement and resource allocation.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Milestone Payments&lt;/strong&gt; – Payments made upon completion of a milestone are non-refundable, as the work has been delivered and accepted.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Third-Party Expenses&lt;/strong&gt; – Any amounts paid toward third-party services, tools, APIs, or infrastructure on behalf of the client are non-refundable.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Valid Refund Scenarios&lt;/strong&gt; – In any other valid scenario where a refund is applicable, the refund will be processed within 15 working days from the date of approval.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Terms and Conditions</title>
+				<link>https://embetter.in/terms/</link>
+				<pubDate>Mon, 22 Jul 2024 00:00:00 +0530</pubDate>
+				<guid>https://embetter.in/terms/</guid>
+				<description>&lt;p&gt;These terms govern the services provided by &lt;strong&gt;Embetter Technologies Pvt Ltd&lt;/strong&gt; to the client.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. Scope of Work&lt;/strong&gt; – Work is limited to the agreed scope in the proposal. Any changes or additions require a written change order and may affect timeline and cost.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2. Client Responsibilities&lt;/strong&gt; – The client must provide timely feedback, approvals, access, and materials. Delays caused by the client may push the project timeline and are not the responsibility of Embetter.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Web 3.0</title>
+				<link>https://embetter.in/services/web3/</link>
+				<pubDate>Mon, 08 Jul 2024 19:13:24 +0530</pubDate>
+				<guid>https://embetter.in/services/web3/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>About Us</title>
+				<link>https://embetter.in/about/about/</link>
+				<pubDate>Fri, 05 Jul 2024 12:59:49 +0530</pubDate>
+				<guid>https://embetter.in/about/about/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>DataOps</title>
+				<link>https://embetter.in/services/dataops/</link>
+				<pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+				<guid>https://embetter.in/services/dataops/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Design (UI/UX Design)</title>
+				<link>https://embetter.in/services/design/</link>
+				<pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+				<guid>https://embetter.in/services/design/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Development (web/ App Development)</title>
+				<link>https://embetter.in/services/development/</link>
+				<pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+				<guid>https://embetter.in/services/development/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>DevOps</title>
+				<link>https://embetter.in/services/devops/</link>
+				<pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+				<guid>https://embetter.in/services/devops/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Embedded Systems (Firmware Development)</title>
+				<link>https://embetter.in/services/embedded-systems/</link>
+				<pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+				<guid>https://embetter.in/services/embedded-systems/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>IOT (Bluetooth/ LoRaWAN Integration)</title>
+				<link>https://embetter.in/services/iot/</link>
+				<pubDate>Fri, 28 Jun 2024 01:50:37 +0530</pubDate>
+				<guid>https://embetter.in/services/iot/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

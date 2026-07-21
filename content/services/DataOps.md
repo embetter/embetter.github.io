@@ -2,8 +2,8 @@
 title = 'DataOps'
 date = 2024-06-28T01:50:37+05:30
 draft = false
-description = 'At Embetter Tech, we don’t just manage data; we optimize it. Our expert team specializes in DataOps, ensuring your data pipelines are efficient, reliable, and tailored to your specific needs. With our innovative DataOps solutions, you get streamlined data processes that scale with your ambitions and drive informed decision-making.'
-lastLine = "Ready to transform your data management? Let’s make your data operations smarter, more efficient, and ready for the future—together."
+description = "Your business generates data every second. We help you capture, clean, and move it to where it matters. Our DataOps practice builds automated pipelines—from ingestion to warehousing to dashboarding—so your team makes decisions on fresh, trustworthy data. Whether it's real-time streams or batch ETL, we design for reliability and observability."
+lastLine = "Is your data stuck in silos or too slow to query? Let's build a pipeline that unifies and accelerates your insights."
 nextLink = "/services/embedded-systems"
 prevLink = "/services/design"
 image =  ""

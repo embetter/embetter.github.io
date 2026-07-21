@@ -1,6 +1,6 @@
 {{define "nav_icons"}}
 
-<div id="nav-icon" class="hidden md:w-auto md:flex max-h-screen min-h-0 md:p-2 md:mt-2">
+<div id="nav-icon" class="hidden md:w-auto md:flex max-h-screen min-h-0 md:pt-6 md:pb-2 md:px-2" style="margin-top: 48px !important;">
 
     {{/* <div id="service_menu" class="hidden md:w-auto md:flex justify-between md:p-2 md:mt-6"> */}}
         <div class="flex flex-col items-center justify-center md:px-2" style="width:94; height:92">
@@ -45,7 +45,7 @@
 
 {{define "main"}}
 <div id="page-content"
-    class="relative flex flex-col max-h-screen md:h-full min-h-0 md:flex md:flex-col  md:justify-center items-center rounded-2xl w-11/12 h-4/6 opacity-95  border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl  md:border-[0.9px] md:w-4/5 lg:h-[50%]  xl:w-3/5 xl:h-[60%] md:rounded-3xl md:mt-0 font-[Alkia] ">
+    class="relative flex flex-col md:flex md:flex-col items-center rounded-2xl w-11/12 opacity-95 border-solid border-opacity-50 border border-black backdrop-blur-md md:opacity-95 md:backdrop-blur-md shadow-2xl md:border-[0.9px] md:w-4/5 xl:w-3/5 md:rounded-3xl my-[75px] font-[Alkia] ">
 
     {{/* Div box starts here for small devices only */}}
     <div class="flex flex-col items-start justify-between h-full md:hidden w-full p-2">
@@ -65,7 +65,7 @@
             </div>
 
             <!-- Description here -->
-            <div class="text-base overflow-y-scroll p-2">
+            <div class="text-base p-2">
                 <p>{{.Params.Description}}</p>
                 <br>
                 <p>{{.Params.lastLine}}</p>
@@ -79,14 +79,14 @@
 
 
     {{/* For medium and large devices all the main content here*/}}
+    <div class="md:flex w-full hidden relative my-8">
 
-    <div class="md:flex h-full w-full hidden relative">
         {{/* left navigation button */}}
         <div class="md:flex justify-center items-center hidden absolute left-0 top-1/2 -translate-y-1/2 z-30" style="margin-left: -28px;">
             <a class=" " href="{{.Params.PrevLink | relURL}}"><img src="/img/left-arrow.svg" width="54px" alt=""></a>
         </div>
 
-        <div class="md:flex md:flex-col md:p-1 h-full w-full hidden text-justify overflow-y-auto min-h-0">
+        <div class="md:flex md:flex-col md:p-4 w-full hidden text-justify">
 
             <!-- Top Heading of every service goes here -->
             <div class="flex justify-center  items-center my-2">

@@ -2,8 +2,8 @@
 title = 'DevOps'
 date = 2024-06-28T01:50:37+05:30
 draft = false
-description = 'At Embetter Tech, we don’t just build software; we accelerate its delivery. Our expert team specializes in DevOps, ensuring your development and operations are seamless, efficient, and tailored to your specific needs. With our innovative DevOps solutions, you get faster deployments, improved collaboration, and a scalable infrastructure that grows with your ambitions.'
-lastLine = "Ready to revolutionize your software delivery? Let’s make your DevOps smarter, more efficient, and ready for the future—together."
+description = "We set up the infrastructure and automation your team needs to ship reliably. From AWS architecture to Pulumi and OpenTofu for infrastructure as code, and GitHub Actions or GitLab CI pipelines—we build it so your deployments are repeatable, monitored, and recoverable. We also consult on incident response, cost optimisation, and security hardening."
+lastLine = "Struggling with slow deployments or infrastructure that's hard to manage? Let's automate and stabilise your delivery pipeline."
 nextLink = "/services/development"
 prevLink = "/services/web3"
 image =  ""
