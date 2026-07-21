@@ -1,0 +1,97 @@
+{{define "main"}}
+
+<div id="page-content"
+  class="flex flex-col justify-start items-center rounded-2xl w-11/12 opacity-95 border border-black backdrop-blur-md shadow-2xl md:w-4/5 xl:w-3/5 md:rounded-3xl font-[Alkia] my-[75px]">
+
+  <div class="p-6 md:p-10 w-full flex flex-col gap-6">
+
+    <h1 class="text-2xl md:text-3xl font-semibold font-[dotFont] text-center mb-8">Pricing</h1>
+
+    <!-- Starter Plan -->
+    <div class="mb-8">
+      <h2 class="text-xl md:text-2xl font-semibold font-[dotFont] mb-4">Starter Plan</h2>
+      <div class="p-5 md:p-6 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm leading-relaxed">
+      <p class="text-base md:text-lg">30 mins Free Technical Consultation Per Week</p>
+      <p class="text-sm md:text-base text-gray-700 mt-1 mb-4">Ideal for exploring ideas, quick technical advice, and feasibility discussions.</p>
+      <a href="https://cal.com/gsingh-embetter" target="_blank">
+        <button class="p-3 bg-[#0192C8] text-white text-sm md:text-base rounded-xl font-semibold">Schedule a Call</button>
+      </a>
+      </div>
+    </div>
+
+    <!-- Milestone Plan -->
+    <div class="mb-8">
+      <h2 class="text-xl md:text-2xl font-semibold font-[dotFont] mb-4">Milestone Plan</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+
+        <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
+          <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">Very-Low Complexity</span>
+          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$500</span>
+          <span class="text-xs text-gray-600">Per Milestone</span>
+        </div>
+
+        <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
+          <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">Low Complexity</span>
+          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$2,000</span>
+          <span class="text-xs text-gray-600">Per Milestone</span>
+        </div>
+
+        <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
+          <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">Average Complexity</span>
+          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$8,000</span>
+          <span class="text-xs text-gray-600">Per Milestone</span>
+        </div>
+
+        <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
+          <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">High Complexity</span>
+          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$15,000</span>
+          <span class="text-xs text-gray-600">Per Milestone</span>
+        </div>
+
+      </div>
+      <p class="text-xs md:text-sm text-gray-500 mt-3 text-center leading-relaxed">* Not sure which complexity level? <a href="mailto:support@embetter.in" class="text-[#0192C8] underline">Contact us</a> and we'll help assess your project.</p>
+      <p class="text-xs text-gray-500 mt-2 text-center">All prices are exclusive of applicable taxes.</p>
+    </div>
+
+    <!-- Revshare Plan -->
+    <div class="mb-8">
+      <h2 class="text-xl md:text-2xl font-semibold font-[dotFont] mb-4">Revshare Plan</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div class="p-5 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
+          <span class="text-sm md:text-base font-semibold">Technical Advisor</span>
+          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">1%</span>
+          <span class="text-xs text-gray-600">Gross Revenue</span>
+        </div>
+
+        <div class="p-5 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
+          <span class="text-sm md:text-base font-semibold">Developer + Maintainer</span>
+          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">30%</span>
+          <span class="text-xs text-gray-600">Monthly Gross Revenue</span>
+          <span class="text-xs text-gray-500 mt-2">$1,500 Advance &middot; Vendor costs billed at actuals</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="p-5 md:p-6 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm text-center leading-relaxed mb-8">
+      <p class="text-base md:text-lg mb-4">Not sure which plan fits your project? Let's discuss your requirements and plan out the milestones.</p>
+      <a href="mailto:support@embetter.in">
+        <button class="p-3 bg-[#0192C8] text-white text-base rounded-xl font-semibold">Plan out Milestones</button>
+      </a>
+    </div>
+
+    <!-- Pay Now -->
+    <div class="p-5 md:p-6 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm text-center leading-relaxed">
+      <p class="text-base md:text-lg mb-4">Ready to get started? Make a payment for a new or ongoing project using the following 'Pay Now' button:</p>
+      <a href="{{"/pay" | relURL}}">
+        <button class="p-3 bg-[#0192C8] text-white text-base rounded-xl font-semibold">Pay Now</button>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+{{end}}

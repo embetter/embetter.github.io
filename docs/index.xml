@@ -14,6 +14,20 @@
 		
 			<atom:link href="https://embetter.in/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>Pay Now</title>
+				<link>https://embetter.in/pay/</link>
+				<pubDate>Mon, 22 Jul 2024 00:00:00 +0530</pubDate>
+				<guid>https://embetter.in/pay/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pricing</title>
+				<link>https://embetter.in/pricing/</link>
+				<pubDate>Mon, 22 Jul 2024 00:00:00 +0530</pubDate>
+				<guid>https://embetter.in/pricing/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>Privacy Policy</title>
 				<link>https://embetter.in/privacy/</link>
 				<pubDate>Mon, 22 Jul 2024 00:00:00 +0530</pubDate>
