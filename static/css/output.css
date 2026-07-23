@@ -677,6 +677,10 @@ video {
   margin-bottom: 75px;
 }
 
+.-mt-4 {
+  margin-top: -1rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -687,10 +691,6 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .mb-4 {
@@ -727,6 +727,10 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-6 {
@@ -837,6 +841,14 @@ video {
   cursor: pointer;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -901,8 +913,14 @@ video {
   gap: 1rem;
 }
 
-.gap-8 {
-  gap: 2rem;
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -949,6 +967,11 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-\[\#0192C8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(1 146 200 / var(--tw-border-opacity, 1));
 }
 
 .border-black {
@@ -1066,6 +1089,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-2 {

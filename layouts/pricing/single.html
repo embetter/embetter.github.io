@@ -5,7 +5,7 @@
 
   <div class="p-6 md:p-10 w-full flex flex-col gap-6">
 
-    <h1 class="text-2xl md:text-3xl font-semibold font-[dotFont] text-center mb-8">Pricing</h1>
+    <h1 class="text-2xl md:text-3xl font-semibold font-[dotFont] text-center">Pricing</h1>
 
     <!-- Starter Plan -->
     <div class="mb-8">
@@ -19,6 +19,14 @@
       </div>
     </div>
 
+    <div class="flex justify-center items-center gap-3 my-2">
+      <button id="currency-inr" class="px-4 py-2 rounded-xl font-semibold text-sm border transition-colors bg-[#0192C8] text-white border-[#0192C8] cursor-pointer">INR</button>
+      <span class="text-gray-500 text-sm">|</span>
+      <button id="currency-usd" class="px-4 py-2 rounded-xl font-semibold text-sm border transition-colors bg-white/20 text-gray-700 border-black border-opacity-30 cursor-pointer">USD</button>
+    </div>
+
+    <p id="rate-note" class="text-xs text-gray-500 text-center -mt-2 mb-2">Displaying prices in INR</p>
+
     <!-- Milestone Plan -->
     <div class="mb-8">
       <h2 class="text-xl md:text-2xl font-semibold font-[dotFont] mb-4">Milestone Plan</h2>
@@ -26,25 +34,25 @@
 
         <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
           <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">Very-Low Complexity</span>
-          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$500</span>
+          <span class="price text-2xl md:text-3xl font-bold text-[#0192C8] my-3" data-usd="500">₹49,000</span>
           <span class="text-xs text-gray-600">Per Milestone</span>
         </div>
 
         <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
           <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">Low Complexity</span>
-          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$2,000</span>
+          <span class="price text-2xl md:text-3xl font-bold text-[#0192C8] my-3" data-usd="2000">₹1,94,000</span>
           <span class="text-xs text-gray-600">Per Milestone</span>
         </div>
 
         <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
           <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">Average Complexity</span>
-          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$8,000</span>
+          <span class="price text-2xl md:text-3xl font-bold text-[#0192C8] my-3" data-usd="8000">₹7,76,000</span>
           <span class="text-xs text-gray-600">Per Milestone</span>
         </div>
 
         <div class="p-4 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm flex flex-col items-center text-center leading-snug">
           <span class="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-700">High Complexity</span>
-          <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">$15,000</span>
+          <span class="price text-2xl md:text-3xl font-bold text-[#0192C8] my-3" data-usd="15000">₹14,55,000</span>
           <span class="text-xs text-gray-600">Per Milestone</span>
         </div>
 
@@ -68,7 +76,7 @@
           <span class="text-sm md:text-base font-semibold">Developer + Maintainer</span>
           <span class="text-2xl md:text-3xl font-bold text-[#0192C8] my-3">30%</span>
           <span class="text-xs text-gray-600">Monthly Gross Revenue</span>
-          <span class="text-xs text-gray-500 mt-2">$1,500 Advance &middot; Vendor costs billed at actuals</span>
+          <span class="text-xs text-gray-500 mt-2"><span class="price" data-usd="1500">₹1,46,000</span> Advance &middot; Vendor costs billed at actuals</span>
         </div>
 
       </div>
@@ -85,7 +93,7 @@
     <!-- Pay Now -->
     <div class="p-5 md:p-6 rounded-2xl border border-black border-opacity-30 bg-white/20 backdrop-blur-sm text-center leading-relaxed">
       <p class="text-base md:text-lg mb-4">Ready to get started? Make a payment for a new or ongoing project using the following 'Pay Now' button:</p>
-      <a href="{{"/pay" | relURL}}">
+      <a href="{{"/paynow" | relURL}}">
         <button class="p-3 bg-[#0192C8] text-white text-base rounded-xl font-semibold">Pay Now</button>
       </a>
     </div>
@@ -93,5 +101,68 @@
   </div>
 
 </div>
+
+<script>
+(function() {
+  var rate = 97;
+  var currentCurrency = 'INR';
+  var inrBtn = document.getElementById('currency-inr');
+  var usdBtn = document.getElementById('currency-usd');
+  var rateNote = document.getElementById('rate-note');
+
+  function roundUp(v, nearest) {
+    return Math.ceil(v / nearest) * nearest;
+  }
+
+  function formatINR(n) {
+    return '₹' + roundUp(n * rate, 1000).toLocaleString('en-IN');
+  }
+
+  function formatUSD(n) {
+    return '$' + roundUp(n, 100).toLocaleString('en-US');
+  }
+
+  function updatePrices(currency) {
+    currentCurrency = currency;
+    var prices = document.querySelectorAll('.price');
+    prices.forEach(function(el) {
+      var usd = parseFloat(el.getAttribute('data-usd'));
+      if (currency === 'INR') {
+        el.textContent = formatINR(usd);
+      } else {
+        el.textContent = formatUSD(usd);
+      }
+    });
+    inrBtn.className = 'px-4 py-2 rounded-xl font-semibold text-sm border transition-colors cursor-pointer ' + (currency === 'INR' ? 'bg-[#0192C8] text-white border-[#0192C8]' : 'bg-white/20 text-gray-700 border-black border-opacity-30');
+    usdBtn.className = 'px-4 py-2 rounded-xl font-semibold text-sm border transition-colors cursor-pointer ' + (currency === 'USD' ? 'bg-[#0192C8] text-white border-[#0192C8]' : 'bg-white/20 text-gray-700 border-black border-opacity-30');
+    rateNote.textContent = currency === 'INR' ? 'Displaying prices in INR' : 'Displaying prices in USD at 1 USD = ' + rate + ' INR';
+  }
+
+  function fetchRate() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://api.frankfurter.app/latest?from=USD&to=INR', true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        try {
+          var data = JSON.parse(xhr.responseText);
+          if (data && data.rates && data.rates.INR) {
+            rate = data.rates.INR;
+          }
+        } catch(e) {}
+      }
+      updatePrices('INR');
+    };
+    xhr.onerror = function() {
+      updatePrices('INR');
+    };
+    xhr.send();
+  }
+
+  inrBtn.addEventListener('click', function() { updatePrices('INR'); });
+  usdBtn.addEventListener('click', function() { updatePrices('USD'); });
+
+  fetchRate();
+})();
+</script>
 
 {{end}}
